@@ -16,3 +16,8 @@ git push            // for pushing the commited changes
 git gui&            // opens GUI version of GIT, & is for not terminating the current
                     // gitbash session/window, so you can use both
 gitk&               // gitk tool (& same as above), used for viewing the history of the repo
+git show -s --pretty=raw 68d8c
+                    // showing the contents of the commit that starts with the mentioned first 5
+                    // symbols (hexadecimal); may need to provide more symbols if theres A LOT of commits
+git ls-tree fa622   // showing the contents of the tree starting with the mentioned first 5 symbols (hex) 
+git show aa0177     // contents of the blob with the mentioned first 5 symbols (hex) 
